@@ -1,7 +1,7 @@
-# Mongofinos
-## Main Branch
+# Gaslands
+## Master Branch
 ### HTML ###
-Here goes all the structural files (currently one). The main goal is make a one
+Here goes all the structural files (currently one). The main goal is to make a one
 page web, where all the sections are actually in the same HTML file.
 ### CSS
 We are running only vanilla CSS (but in the future where going to mash up with
