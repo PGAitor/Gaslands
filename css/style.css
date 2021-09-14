@@ -19,25 +19,26 @@ footer {
 }
 
 .item1 { grid-area: header; }
-.item2 { grid-area: menu; }
+.item2 { grid-area: menuse; }
 .item3 { grid-area: main; }
-.item4 { grid-area: right; }
+.item4 { grid-area: righ; }
 .item5 { grid-area: footer; }
 
 .grid-container {
   display: grid;
   grid-template-areas:
     'header header header header header header'
-    'menu main main main right right'
-    'menu footer footer footer footer footer';
+    'menuse main main main righ righ'
+    'menuse footer footer footer footer footer';
   grid-gap: 10px;
-  background-color: #eeeff0;
+  background-color: #7f93a7;
   padding: 10px;
 }
 
-.grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
+.grid-container div {
+  background-color: rgba(109, 34, 34, 0.8);
   text-align: center;
   padding: 20px 0;
   font-size: 30px;
+  display: inline-block;
 }
