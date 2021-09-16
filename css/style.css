@@ -65,6 +65,7 @@
   box-shadow:  0px 0px 20px 10px #ee1c25;
   background-image: url(../img/tv.png);
   background-size: 300px;
+  filter:saturate(4);
 }
 
 .property-image2
@@ -124,10 +125,12 @@
 .property-card-box-shadow-01
 {
   box-shadow:  0px 0px 20px 10px #b56727;
+  filter:saturate(4);
 }
 .property-card-box-shadow-02
 {
   box-shadow:  0px 0px 20px 10px #1cabee;
+  filter:saturate(4);
 }
 /* Top Half of card, image. */
 .property-image
@@ -189,14 +192,12 @@
 
 .img3 {
   background-image:url(../img/mini.png);
-  filter:hue-rotate(120deg);
   background-position:top;
   background-size:cover;
   background-repeat:no-repeat;
 }
 .img4 {
   background-image:url(../img/crash2.jpeg);
-  filter:saturate(4);
   background-position: center;
   background-size:cover;
   background-repeat:no-repeat;
