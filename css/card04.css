@@ -1,3 +1,9 @@
+/* 
+---------------
+FOURTH CARD CSS
+---------------
+*/
+
 .property-card-box-shadow-04 {
     box-shadow:  0px 0px 20px 10px var(--box-shadow-cyan);
     filter:saturate(4);
