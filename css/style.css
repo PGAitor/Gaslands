@@ -1,6 +1,6 @@
 /* Variables, mainly for color patterns */
 :root {
-  --bg-color: #f59524 ; /* #005c47; */
+  --bg-color: #000000 ; /* #005c47 #f59524 */
   --header-bg-color: #b8632a; /* #01ad4b; */
   --grid-container-bg-color: #ffee0b; /* #d2d931; */
   --box-shadow-pink: #ff61ab;
