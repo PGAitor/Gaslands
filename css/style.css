@@ -24,7 +24,7 @@
   display: flex;
   justify-content: center;
 }
-#main { 
+#main {
   grid-area: main;
   padding: 25px 0px;
   font-size: smaller;
@@ -37,7 +37,9 @@
 }
 #content-cards {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 45px;
 }
 /* Just playing a bit with the temporal logo, WIP */
 .logo {
