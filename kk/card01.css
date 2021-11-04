@@ -1,43 +1,36 @@
-/* 
---------------
-THIRD CARD CSS
---------------
-*/
-
-/* Layer alignment and hover rules for the property card */
-.box-03 {
+/* main container, all other divs go inside this one */
+.allfather {
     position: relative;
     height: 215px;
-    width: 298px;
+    width: 300px;
 }
-.layer-top-03 {
+/* border image container, just for decoration, so we ignore any events */
+.top-layer {
     position: absolute;
     top: 0px;
     left: 0px;
     pointer-events: none;
 }
-.layer-bottom-03 {
+/* top layer border image details */
+.neon {
+    background-origin: border-box;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-image: url(../img/NeonBorder.png);
+    filter: hue-rotate(40deg);
+    background-size: 100%;
+}
+/* here goes the property card container */
+.bottom-layer {
     position: absolute;
     top: 2px;
     left: 2px;
 }
-/* Top layer rules */
-.neon {
-    background-origin: border-box;
-    height: 215px;
-    width: 298px;
-    position: relative;
-    background-image: url(../img/NeonBorder.png);
-    filter: hue-rotate(40deg);
-    background-size: 298px;
-}
-.property-card-box-shadow-03 {
-    box-shadow: 0px 0px 20px 10px var(--box-shadow-orange);
-    filter: saturate(4);
-}
-.property-card-03 {
-    height: 211px;
-    width: 294px;
+/* here starts the property card */
+.property-card {
+    height: 98%;
+    width: 98%;
     display: flex;
     flex-direction: column;
     transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -46,40 +39,46 @@ THIRD CARD CSS
     box-shadow:  0px 0px 20px 10px var(--box-shadow-red);
     filter: saturate(2);
 }
-/* Top Half of card, image. */
-.property-image-03 {
+/* alternative box shadow colors */
+.property-card-box-shadow {
+    box-shadow: 0px 0px 20px 10px var(--box-shadow-orange);
+    filter: saturate(4);
+}
+/* top half of card, image. */
+.property-image {
     width: 100%;
-    height: 6em;
-    padding: 1em 2em;
+    height: 40%;
+    padding: 6px 13px;
     position: absolute;
     top: 0px;
     transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
     background-image: url(../img/crash2.jpeg);
-    background-position: top;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.img3 {
+/* alternative card image */
+.img {
     background-image: url(../img/mini.png);
     background-position: top;
     filter: saturate(2);
 }
-/* Bottom Card Section */
-.property-description-03 {
+/* bottom card section */
+.property-description {
     background-color: var(--property-description-bg-color);
-    height: 130px;
+    height: 60%;
     width: 100%;
     position: absolute;
     bottom: 0px;
     transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-    padding: 0.5em 1em;
+    padding: 6px 13px;
     text-align: center;
 }
-/* Property Cards Hover States */
-.property-card-03:hover .property-description-03 {
-    height: 0em;
-    padding: 0px 1em;
+/* property cards hover states */
+.property-card:hover .property-description {
+    height: 0px;
+    padding: 0px 6px;
 }
-.property-card-03:hover .property-image-03 {
-    height: 18em;
+.property-card:hover .property-image {
+    height: 100%;
 }
