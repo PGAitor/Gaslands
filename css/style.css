@@ -57,7 +57,7 @@
 }
 /* Start of cards CSS */
 /* main container, all other divs go inside this one */
-.allfather {
+.article {
   position: relative;
   height: 215px;
   width: 300px;
@@ -144,7 +144,10 @@
 /* Basic rules for the footer */
 #footer { 
   grid-area: footer;
+  display: flex;
+  justify-content: center;
   background-color: var(--property-description-bg-color);
+  background-image: url(../img/accident.gif);
 }
 
 .foot
