@@ -14,56 +14,147 @@
     <img class="logo" src="./img/MarchHare1.jpg" alt="">
   </header>
   <main id="main">
-    <div id="teles">
-      <div>
-        <img class="tv" src="./img/tv.png">
-      </div>
-      <div class="property-card2">
-        <a href="#">
-          <div class="property-image2">
+
+    <div id="content-cards">
+
+
+      <div class="article">
+        <div class="property-card bottom-layer">
+          <a href="#">
+            <div class="property-image" id="imagen">
+            </div>
+          </a>
+          <div class="property-description">
+            <h4> Card Title </h4>
+            <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.</p>
           </div>
-        </a>
-        <div class="property-description2">
-          <h5> Card Title </h5>
-          <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.</p>
+        </div>
+        <div class="neon top-layer">
         </div>
       </div>
-      <div class="property-card property-card-box-shadow-01">
-        <a href="#">
-          <div class="property-image img3">
+
+      <div class="article">
+        <div class="property-card bottom-layer">
+          <a href="#">
+            <div class="property-image img">
+            </div>
+          </a>
+          <div class="property-description">
+            <h4> Card Title </h4>
+            <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.</p>
           </div>
-        </a>
-        <div class="property-description">
-          <h5> Dime de que presumes... </h5>
-          <p>Demostramos que el tamaño del coche está directamente relacionado con el tamaño del miembro de su
-            propietario. Entrevista con Jack "Trípode" Mconiel.</p>
         </div>
-        <a href="#">
-          <div class="property-social-icons">
-            <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
-          </div>
-        </a>
-      </div>
-      <div class="property-card property-card-box-shadow-02">
-        <a href="#">
-          <div class="property-image img4">
-          </div>
-        </a>
-        <div class="property-description">
-          <h5> ¡CAZANDO DOMIGUEROS! </h5>
-          <p>Los domingueros, lacra de las tierras áridas, deben morir. Aquellos que van en caravana son el peor
-            ejemplo... y las mejores dianas!</p>
+        <div class="neon top-layer">
         </div>
-        <a href="#">
-          <div class="property-social-icons">
-            <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
-          </div>
-        </a>
       </div>
+
+      <div class="article">
+        <div class="property-card bottom-layer">
+          <a href="#">
+            <div class="property-image">
+            </div>
+          </a>
+          <div class="property-description">
+            <h4> Card Title </h4>
+            <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.</p>
+          </div>
+        </div>
+        <div class="neon top-layer">
+        </div>
+      </div>
+
+      <div class="article">
+        <div class="property-card bottom-layer">
+          <a href="#">
+            <div class="property-image">
+            </div>
+          </a>
+          <div class="property-description">
+            <h4> Card Title </h4>
+            <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.</p>
+          </div>
+        </div>
+        <div class="neon top-layer">
+        </div>
+      </div>
+
+      <div class="article">
+        <div class="property-card bottom-layer">
+          <a href="#">
+            <div class="property-image">
+            </div>
+          </a>
+          <div class="property-description">
+            <h4> Card Title </h4>
+            <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.</p>
+          </div>
+        </div>
+        <div class="neon top-layer">
+        </div>
+      </div>
+
+      <div class="article">
+        <div class="property-card bottom-layer">
+          <a href="#">
+            <div class="property-image">
+            </div>
+          </a>
+          <div class="property-description">
+            <h4> Card Title </h4>
+            <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.</p>
+          </div>
+        </div>
+        <div class="neon top-layer">
+        </div>
+      </div>
+
+      <!-- Estos dos son invisibles -->
+      <div class="article">
+        <div class="property-card bottom-layer">
+          <a href="#">
+            <div class="property-image">
+            </div>
+          </a>
+          <div class="property-description">
+            <h4> Card Title </h4>
+            <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.</p>
+          </div>
+        </div>
+        <div class="neon top-layer">
+        </div>
+      </div>
+
     </div>
+    
   </main>
   <footer id="footer">
-    <div>Aquí va el piesito de articulo</div>
+    <div><button type="button" 
+      onclick=fot()>
+      Click Me!</button>
+    </div>
   </footer>
+  <script>
+    function howManyVoids() {
+      let howManyMirtas;
+      howManyMirtas = document.getElementsByClassName('article').length;
+      if (howManyMirtas % 4 == 0) {
+        howManyMirtas = 0;
+      }
+      else {
+        howManyMirtas = 4 - (howManyMirtas % 4);
+      }
+      
+      howManyMirtas.log(howManyMirtas + ' Mirtas');
+    }
+
+    function bringTheMirtas() {
+      let newArticle = document.createElement('div');
+      newArticle.className = "article";
+      document.getElementById('content-cards').appendChild(newArticle);
+    }
+    howManyVoids();
+    bringTheMirtas();
+  </script>
+  <script src="js/ImgNameChanger.js"></script>
 </body>
 </html>
