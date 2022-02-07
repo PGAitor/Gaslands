@@ -8,5 +8,50 @@
   <title>Gaslands Report</title>
 </head>
 <body>
-  
+  <header>
+    <div id="logo" class="bigLogo"></div>
+    <div id="banner"></div>
+  </header>
+
+  <nav>
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div id="bigdaddy">
+      <div class="leftdaddy"></div>
+      <div class="rightdaddy"></div>
+    </div>
+    <div id="litlesisters">
+        <div class="miniature"></div>
+    </div>
+    <div class="separator-line"></div>
+    <div class="billboard"></div>
+    <div class="separator-line"></div>
+    <div id="articles">
+        <article class="single-article official-race"></article>
+        <div class="separator-line"></div>
+        <article class="single-article wastelands-race"></article>
+        <div class="separator-line"></div>
+    </div>
+  </main>
+
+  <script>
+    window.onscroll = function() {logo_resize()};
+
+    function logo_resize() {
+      // Overwriting #logo class list when scrolling.
+      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementById("logo").className = "littleLogo";
+      } else {
+        document.getElementById("logo").className = "bigLogo";
+      }
+    }
+  </script>
+
 </body>
+</html>

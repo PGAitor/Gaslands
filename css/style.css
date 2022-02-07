@@ -1,5 +1,76 @@
 /* Variables, mainly for color patterns */
-:root {
 
+/* General basic rules ********************************************************/
+* {
+  box-sizing:border-box;
+  margin: 0px;
+  padding: 0px;
 }
-/* General basic rules */
+
+/* header rules ***************************************************************/
+#logo{
+  /* #logo must get dimensions from .bigLogo or .littleLogo*/
+
+  /*position*/
+  position: fixed;
+  top:0px;
+  left:0px;
+  margin:20px;
+  z-index: 1;
+  /*aesthetics*/
+  background-color: #05F240;
+  border-radius: 50%;
+  transition: all .5s ease;
+}
+
+.bigLogo{
+  /*Diemnsions*/
+  width: 10em;
+  height: 10em;
+}
+
+.littleLogo{
+  /*Dimensions*/
+  width: 5em;
+  height: 5em;
+}
+
+#banner{
+  /*Dimensions*/
+  width: 100%;
+  height: 50px;
+  /*aesthetics*/
+  background-color: #F20505;
+}
+
+/* nav rules ******************************************************************/
+
+nav{
+  /*Diemnsions*/
+
+  /*position*/
+  position: sticky;
+  top:0px;
+
+  /*aesthetics*/
+  overflow: hidden;
+  background-color: #049DD9;
+
+  /*Clear #logo float*/
+  clear:both;
+}
+
+/* main rules *****************************************************************/
+
+#bigdaddy{
+  /*Dimensions*/
+  width: 750px;
+  height: 300px;
+
+  /*position*/
+
+  margin: 0px auto;
+  margin-top: 50px;
+
+  background-color: black;
+}
