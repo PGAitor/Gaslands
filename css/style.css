@@ -68,9 +68,18 @@ nav{
   height: 300px;
 
   /*position*/
-
   margin: 0px auto;
   margin-top: 50px;
 
+  /*aesthetics*/
   background-color: black;
+  background-image: linear-gradient(45deg, transparent 50px, red 50%);
+  
+}
+
+.leftdaddy{
+  /*Dimensions*/
+
+
+
 }
