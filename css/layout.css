@@ -1,0 +1,65 @@
+/*CSS for web layout*/
+/* Variables, mainly for color patterns */
+
+/* General basic rules ********************************************************/
+* {
+  box-sizing:border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* header rules ***************************************************************/
+#logo{
+  /* #logo must get dimensions from .bigLogo or .littleLogo*/
+
+  /*position*/
+  position: fixed;
+  top:10px;
+  left:30px;
+
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+}
+
+.bigLogo{
+  /*Diemnsions*/
+  width: 10vw;
+  min-width: 5em;
+  height: 10vw;
+  min-height: 5em;
+}
+
+.littleLogo{
+  /*Dimensions*/
+  width: 5em;
+  height: 5em;
+}
+
+#banner{
+  /*Dimensions*/
+  width: 100%;
+  height: 150px;
+
+}
+
+/* nav rules ******************************************************************/
+
+nav{
+  /*Diemnsions*/
+
+  /*position*/
+  position: sticky;
+  top:0px;
+
+  /*Clear #logo float*/
+  clear:both;
+}
+
+nav li{
+  display: inline-block;
+}
+
+/* main rules *****************************************************************/

@@ -1,0 +1,127 @@
+.banner-container{
+  /*Dimensions*/
+  width: 750px;
+  height: 300px;
+  overflow: hidden;
+
+  /*position*/
+  position: relative;
+  margin: 0px auto;
+  margin-top: 50px;
+
+  /*aesthetics*/
+  background-color: orange;
+  background-size: 750px;
+
+  /*fx*/
+  transition: all .5s ease-out;
+
+
+}
+
+.leftbanner, .rightbanner{
+  /*Dimensions*/
+  width: 430px;
+  height: 300px;
+
+  /*fx*/
+  transition: all .5s ease-out;
+  transform: skewX(20deg);
+}
+
+.leftbanner{
+  /*position*/
+  position: absolute;
+  top:0px;
+  left:-55px;
+
+  /*aesthetics*/
+  background-color: red;
+}
+
+.rightbanner{
+  /*position*/
+  position: absolute;
+  top:0px;
+  right:-55px;
+
+  /*aesthetics*/
+  background-color: green;
+}
+
+.leftbanner:hover, .rightbanner:hover{
+  /*Dimensions*/
+  width:860px;
+
+  /*position*/
+  z-index: 1;
+}
+
+.leftbanner:hover .leftbox, .rightbanner:hover .rightbox{
+  /*Dimensions*/
+  width: 750px;
+}
+
+/*Select banner container's divs direct childs without hover over them
+(rightbox when user hover leftbox and leftbox when user hover rightbox) */
+.banner-container:hover>:not(div:hover){
+  /*Dimensions*/
+  width: 0px;
+  /*aesthetics*/
+  overflow: hidden;
+}
+
+.leftbox, .rightbox{
+  /*Dimensions*/
+  width:320px;
+  height: 300px;
+
+  /*position*/
+  position: absolute;
+  top: 0px;
+
+  /*aesthetics*/
+  color: white;
+  overflow: hidden;
+  border:1px solid blue;/*Only for dev time ;)*/
+
+  /*fx*/
+  transform: skewX(-20deg);
+  transition: all .5s ease-out;
+}
+
+.leftbox{
+  /*position*/
+  left:55px;
+}
+
+.rightbox{
+  /*position*/
+  right: 55px;
+}
+
+/*Example*/
+.leftbox>div:nth-child(1){
+  /*position*/
+  position: absolute;
+  left: 200px;
+
+  /*Dimensions*/
+  width:100px;
+  height: 100px;
+
+  /*aesthetics*/
+  background-color: blue;
+}
+/*Example*/
+.leftbox>div:nth-child(2){
+  /*position*/
+  position: absolute;
+  left: 400px;
+
+  /*Dimensions*/
+  width:100px;
+  height: 100px;
+
+  /*aesthetics*/
+  background-color: yellow;

@@ -1,11 +1,7 @@
+/* Colors and aesthetics*/
 /* Variables, mainly for color patterns */
 
 /* General basic rules ********************************************************/
-* {
-  box-sizing:border-box;
-  margin: 0px;
-  padding: 0px;
-}
 
 body{
   background-color: black;
@@ -13,42 +9,14 @@ body{
 
 /* header rules ***************************************************************/
 #logo{
-  /* #logo must get dimensions from .bigLogo or .littleLogo*/
-
-  /*position*/
-  position: fixed;
-  top:10px;
-  left:30px;
-
-  z-index: 1;
-  display: flex;
-  justify-content: center;
-  align-content: center;
   /*aesthetics*/
   background-color: #01ff47;
   border-radius: 50%;
   transition: all .5s ease;
 }
 
-.bigLogo{
-  /*Diemnsions*/
-  width: 10vw;
-  min-width: 5em;
-  height: 10vw;
-  min-height: 5em;
-}
-
-.littleLogo{
-  /*Dimensions*/
-  width: 5em;
-  height: 5em;
-}
-
 #banner{
-  /*Dimensions*/
-  width: 100%;
-  height: 150px;
-  /*aesthetics*/
+    /*aesthetics*/
   /*background-image:linear-gradient(to top, #018afd , black 40%);*/
   font-family: 'Creepster', cursive;
   color:yellow;
@@ -61,27 +29,14 @@ body{
 /* nav rules ******************************************************************/
 
 nav{
-  /*Diemnsions*/
-
-  /*position*/
-  position: sticky;
-  top:0px;
-
   /*aesthetics*/
   overflow: hidden;
   background-color: #018afd;
   text-align: center;
-
-  /*Clear #logo float*/
-  clear:both;
 }
 
 nav ul{
   list-style: none;
-}
-
-nav li{
-  display: inline-block;
 }
 
 nav li a{
@@ -95,86 +50,3 @@ nav li a{
 }
 
 /* main rules *****************************************************************/
-
-#bigdaddy{
-  /*Dimensions*/
-  width: 750px;
-  height: 300px;
-  overflow: hidden;
-
-  /*position*/
-  position: relative;
-  margin: 0px auto;
-  margin-top: 50px;
-
-  /*aesthetics*/
-  background-color: orange;
-  background-size: 750px;
-
-  /*fx*/
-  transition: all .5s ease-out;
-
-
-}
-
-.leftdaddy, .rightdaddy{
-  /*Dimensions*/
-  width: 430px;
-  height: 300px;
-
-  /*fx*/
-  transition: all .5s ease-out;
-  transform: skewX(20deg);
-}
-
-.leftdaddy{
-  /*aesthetics*/
-  background-color: red;
-  position: absolute;
-  top:0px;
-  left:-55px;
-}
-
-.rightdaddy{
-  /*aesthetics*/
-  background-color: green;
-  position: absolute;
-  top:0px;
-  right:-55px;
-}
-
-.leftdaddy:hover, .rightdaddy:hover{
-  width:860px;
-  z-index: 1;
-
-}
-
-.leftdaddy:hover .leftbox, .rightdaddy:hover .rightbox{
-  width: 750px;
-}
-
-#bigdaddy:hover>:not(div:hover){
-  width: 0px;
-  overflow: hidden;
-}
-
-.leftbox,.rightbox{
-  position: absolute;
-  top: 0px;
-  width:320px;
-  height: 300px;
-  color: white;
-  transform: skewX(-20deg);
-  overflow: hidden;
-  border:1px solid blue;
-  /*fx*/
-  transition: all .5s ease-out;
-}
-
-.leftbox{
-  left:55px;
-}
-
-.rightbox{
-  right: 55px;
-}
