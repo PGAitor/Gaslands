@@ -1,0 +1,86 @@
+* {
+   box-sizing: border-box;
+}
+
+article>h2 {
+ text-align: center; 
+}
+/* Flex container ------------------------------------*/
+.comment {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 20px;
+  margin-bottom: 0.5em;
+}
+
+.left-side {
+  display: flex;
+  background-color: #f1f1f1;
+  padding: 5px;
+  flex: 15%;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.left-side>img {
+    width: 3.5em;
+}
+
+.right-side {
+  display: flex;
+  background-color: #f1f1f1;
+  padding: 5px;
+  flex: 15%;
+  justify-content: left;
+  align-items: flex-end;
+}
+
+.right-side>img {
+    width: 3.5em;
+}
+
+.item-comment {
+  background-color: dodgerblue;
+  padding: 5px 5px 15px 5px;
+  flex: 70%;
+  text-align: center;
+}
+
+.left-comment {
+  border-radius: 1em 1em 1em 0;
+}
+
+.left-comment::before {
+  content: "";
+  position: absolute;
+  right: 850px;
+  top:26px;
+  width: 0;
+  height: 0;
+  border-top: 13px solid transparent;
+  border-right: 26px solid blue;
+  border-bottom: 13px solid transparents;
+}
+
+.right-comment {
+  border-radius: 1em 1em 0 1em;
+}
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .item-comment{
+    flex: 100%;
+    order: 1;
+  }
+  
+  .left-side{
+  	order: 2;
+    flex: 50%;
+    justify-content: left;
+  }
+  
+  .right-side{
+  	order: 3;
+    flex: 50%;
+    justify-content: right;
+  }
+}
