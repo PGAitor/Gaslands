@@ -25,23 +25,23 @@
 
 /* General basic rules ********************************************************/
 * {
-  box-sizing:border-box;
+  box-sizing: border-box;
   margin: 0px;
   padding: 0px;
 }
 
-body{
+body {
   background-color: black;
 }
 
 /* header rules ***************************************************************/
-#logo{
+#logo {
   /* #logo must get dimensions from .bigLogo or .littleLogo*/
 
   /*position*/
   position: fixed;
-  top:10px;
-  left:30px;
+  top: 10px;
+  left: 30px;
 
   z-index: 1;
   display: flex;
@@ -53,7 +53,7 @@ body{
   transition: all .5s ease;
 }
 
-.bigLogo{
+.bigLogo {
   /*Diemnsions*/
   width: 10vw;
   min-width: 5em;
@@ -61,20 +61,20 @@ body{
   min-height: 5em;
 }
 
-.littleLogo{
+.littleLogo {
   /*Dimensions*/
   width: 5em;
   height: 5em;
 }
 
-#banner{
+#banner {
   /*Dimensions*/
   width: 100%;
   height: 150px;
   /*aesthetics*/
   /*background-image:linear-gradient(to top, #018afd , black 40%);*/
   font-family: 'Creepster', cursive;
-  color:yellow;
+  color: yellow;
   text-align: center;
   line-height: 150px;
   font-size: 7vw;
@@ -83,12 +83,12 @@ body{
 
 /* nav rules ******************************************************************/
 
-nav{
+nav {
   /*Diemnsions*/
 
   /*position*/
   position: sticky;
-  top:0px;
+  top: 0px;
 
   /*aesthetics*/
   overflow: hidden;
@@ -96,18 +96,18 @@ nav{
   text-align: center;
 
   /*Clear #logo float*/
-  clear:both;
+  clear: both;
 }
 
-nav ul{
+nav ul {
   list-style: none;
 }
 
-nav li{
+nav li {
   display: inline-block;
 }
 
-nav li a{
+nav li a {
   text-decoration: none;
   display: block;
   padding: 15px;
@@ -119,7 +119,7 @@ nav li a{
 
 /* main rules *****************************************************************/
 
-#bigdaddy{
+#bigdaddy {
   /*Dimensions*/
   width: 750px;
   height: 300px;
@@ -140,7 +140,8 @@ nav li a{
 
 }
 
-.leftdaddy, .rightdaddy{
+.leftdaddy,
+.rightdaddy {
   /*Dimensions*/
   width: 430px;
   height: 300px;
@@ -150,54 +151,57 @@ nav li a{
   transform: skewX(20deg);
 }
 
-.leftdaddy{
+.leftdaddy {
   /*aesthetics*/
   background-color: red;
   position: absolute;
-  top:0px;
-  left:-55px;
+  top: 0px;
+  left: -55px;
 }
 
-.rightdaddy{
+.rightdaddy {
   /*aesthetics*/
   background-color: green;
   position: absolute;
-  top:0px;
-  right:-55px;
+  top: 0px;
+  right: -55px;
 }
 
-.leftdaddy:hover, .rightdaddy:hover{
-  width:860px;
+.leftdaddy:hover,
+.rightdaddy:hover {
+  width: 860px;
   z-index: 1;
 
 }
 
-.leftdaddy:hover .leftbox, .rightdaddy:hover .rightbox{
+.leftdaddy:hover .leftbox,
+.rightdaddy:hover .rightbox {
   width: 750px;
 }
 
-#bigdaddy:hover>:not(div:hover){
+#bigdaddy:hover>:not(div:hover) {
   width: 0px;
   overflow: hidden;
 }
 
-.leftbox,.rightbox{
+.leftbox,
+.rightbox {
   position: absolute;
   top: 0px;
-  width:320px;
+  width: 320px;
   height: 300px;
   color: white;
   transform: skewX(-20deg);
   overflow: hidden;
-  border:1px solid blue;
+  border: 1px solid blue;
   /*fx*/
   transition: all .5s ease-out;
 }
 
-.leftbox{
-  left:55px;
+.leftbox {
+  left: 55px;
 }
 
-.rightbox{
+.rightbox {
   right: 55px;
 }

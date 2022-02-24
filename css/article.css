@@ -1,11 +1,15 @@
 * {
-   box-sizing: border-box;
+  /* Style */
+  background-color: #fff;
 }
 
 article>h2 {
- text-align: center; 
+  /* Layout */
+  text-align: center;
+  padding: 2em;
 }
-/* Flex container ------------------------------------*/
+
+/* Flex container **********************************************************/
 .comment {
   display: flex;
   flex-wrap: wrap;
@@ -15,7 +19,6 @@ article>h2 {
 
 .left-side {
   display: flex;
-  background-color: #f1f1f1;
   padding: 5px;
   flex: 15%;
   justify-content: flex-end;
@@ -23,12 +26,11 @@ article>h2 {
 }
 
 .left-side>img {
-    width: 3.5em;
+  width: 3.5em;
 }
 
 .right-side {
   display: flex;
-  background-color: #f1f1f1;
   padding: 5px;
   flex: 15%;
   justify-content: left;
@@ -36,14 +38,18 @@ article>h2 {
 }
 
 .right-side>img {
-    width: 3.5em;
+  width: 3.5em;
 }
 
 .item-comment {
-  background-color: dodgerblue;
+  /* Layout */
   padding: 5px 5px 15px 5px;
   flex: 70%;
   text-align: center;
+  border: 2px solid;
+
+  /* Style */
+  background-color: #0597F2;
 }
 
 .left-comment {
@@ -53,8 +59,8 @@ article>h2 {
 .left-comment::before {
   content: "";
   position: absolute;
-  right: 850px;
-  top:26px;
+  right: 650px;
+  top: 26px;
   width: 0;
   height: 0;
   border-top: 13px solid transparent;
@@ -65,21 +71,22 @@ article>h2 {
 .right-comment {
   border-radius: 1em 1em 0 1em;
 }
+
 /* Responsive layout - makes a one column-layout instead of a two-column layout */
 @media (max-width: 800px) {
-  .item-comment{
+  .item-comment {
     flex: 100%;
     order: 1;
   }
-  
-  .left-side{
-  	order: 2;
+
+  .left-side {
+    order: 2;
     flex: 50%;
     justify-content: left;
   }
-  
-  .right-side{
-  	order: 3;
+
+  .right-side {
+    order: 3;
     flex: 50%;
     justify-content: right;
   }
