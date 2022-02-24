@@ -1,4 +1,27 @@
 /* Variables, mainly for color patterns */
+:root {
+  /* Main colour pallete */
+  --one-blue: #0597F2;
+  --one-red: #F20505;
+  --one-yellow: #EAF205;
+  --one-green: #05F240;
+  --one-orange: #F27507;
+
+  /* Asphalt extra colours */
+  --gray-light: #BFBFBF;
+  --gray-medium: #8C8C8C;
+  --gray-dark: #595856;
+
+  /* Off road extra colours */
+  --ocre-light: #F2A74B;
+  --ocre-medium: #D97941;
+  --ocre-dark: #D97941;
+
+  /* Player colours */
+  --player-red: #C40900;
+  --player-green: #0ECC1E;
+  --player-purple: #B000E0;
+}
 
 /* General basic rules ********************************************************/
 * {
