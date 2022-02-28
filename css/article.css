@@ -19,25 +19,23 @@ article>h2 {
 
 .left-side {
   display: flex;
+  padding-top:26px;
   padding-right: 26px;
   flex-basis: 10%;
-  justify-content: flex-end;
+  justify-content: right;
   align-items: flex-end;
-}
-
-.left-side>img {
-  width: 3.5em;
 }
 
 .right-side {
   display: flex;
+  padding-top:26px;
   padding-left: 26px;
   flex-basis: 10%;
   justify-content: left;
   align-items: flex-end;
 }
 
-.right-side>img {
+.left-side>img, .right-side>img{
   width: 3.5em;
 }
 
@@ -49,7 +47,6 @@ article>h2 {
   border: 2px solid;
   border-radius: 1em;
   position: relative;
-
 
   /* Style */
   background-color: #0597F2;
@@ -81,20 +78,50 @@ article>h2 {
 
 /* Responsive layout - makes a one column-layout instead of a two-column layout */
 @media (max-width: 800px) {
+  .comment{
+    justify-content:space-between;
+  }
+
   .item-comment {
-    flex: 100%;
+    flex-basis: 100%;
     order: 1;
   }
 
   .left-side {
     order: 2;
-    flex: 50%;
+    flex-basis: 50%;
     justify-content: left;
+    max-width: 160px;
   }
 
   .right-side {
     order: 3;
-    flex: 50%;
-    justify-content: right;
+    flex-basis: 50%;
+    max-width: 160px;
+    justify-content: flex-end;
+  }
+
+  .left-comment::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 26px;
+    width: 0;
+    height: 0;
+    border-left: 13px solid transparent;
+    border-top: 26px solid black;
+    border-right: 13px solid transparent;
+  }
+
+  .right-comment::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left:90%;
+    width: 0;
+    height: 0;
+    border-left: 13px solid transparent;
+    border-top: 26px solid black;
+    border-right: 13px solid transparent;
   }
 }

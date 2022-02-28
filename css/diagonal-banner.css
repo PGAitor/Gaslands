@@ -36,6 +36,7 @@
   left:-55px;
 
   /*aesthetics*/
+  overflow: hidden;
   background-color: red;
 }
 
@@ -46,6 +47,7 @@
   right:-55px;
 
   /*aesthetics*/
+  overflow: hidden;
   background-color: green;
 }
 
@@ -59,7 +61,7 @@
 
 .leftbanner:hover .leftbox, .rightbanner:hover .rightbox{
   /*Dimensions*/
-  width: 750px;
+  width: 860px;
 }
 
 /*Select banner container's divs direct childs without hover over them
@@ -73,7 +75,7 @@
 
 .leftbox, .rightbox{
   /*Dimensions*/
-  width:320px;
+  width:750px;
   height: 300px;
 
   /*position*/
@@ -100,28 +102,12 @@
   right: 55px;
 }
 
-/*Example*/
-.leftbox>div:nth-child(1){
-  /*position*/
-  position: absolute;
-  left: 200px;
-
-  /*Dimensions*/
-  width:100px;
-  height: 100px;
-
-  /*aesthetics*/
-  background-color: blue;
+.leftbox img, .rightbox img{
+  width: 750px;
 }
-/*Example*/
-.leftbox>div:nth-child(2){
-  /*position*/
+
+.rightbox img{
   position: absolute;
-  left: 400px;
-
-  /*Dimensions*/
-  width:100px;
-  height: 100px;
-
-  /*aesthetics*/
-  background-color: yellow;
+  top:0px;
+  right: 0px;
+}
