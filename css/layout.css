@@ -63,34 +63,3 @@ nav li{
 }
 
 /* main rules *****************************************************************/
-
-.parrilla{
-  display: grid;
-  grid-template-areas:
-    'izda centro dcha';
-  grid-template-columns: 200px, 1fr, 200px;
-}
-
-
-#talkbubble {
-  width: 120px;
-  height: 500px;
-  background: red;
-  grid-area: centro;
-  position: relative;
-  left:100px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-}
-#talkbubble:before {
-  content: "";
-  position: absolute;
-  right: 100%;
-  bottom: 40px;
-  width: 0;
-  height: 0;
-  border-top: 13px solid transparent;
-  border-right: 26px solid red;
-  border-bottom: 13px solid transparent;
-}
