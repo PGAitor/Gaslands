@@ -14,9 +14,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Rubik:wght@900&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <header>
-    <div id="logo" class="bigLogo"><img style="width:60%;"src="img/txupon.svg" alt=""></div>
+    <div id="logo" class="bigLogo"><img style="width:60%;" src="img/txupon.svg" alt=""></div>
     <div id="banner">DEATH RACE 2000</div>
   </header>
 
@@ -37,19 +38,15 @@
           <div></div>
         </div>
       </div>
-      <div class="rightbanner"><div class="rightbox">diosito</div></div>
-    </div>
-    <div id="preview">
-        <div class="miniature"></div>
     </div>
     <div class="separator-line"></div>
     <div class="billboard"></div>
     <div class="separator-line"></div>
     <div id="articles">
-        <article class="single-article official-race"></article>
-        <div class="separator-line"></div>
-        <article class="single-article wastelands-race"></article>
-        <div class="separator-line"></div>
+      <article class="single-article official-race"></article>
+      <div class="separator-line"></div>
+      <article class="single-article wastelands-race"></article>
+      <div class="separator-line"></div>
     </div>
   </main>
 
@@ -108,7 +105,9 @@
   <br>
   <br>
   <script>
-    window.onscroll = function() {logo_resize()};
+    window.onscroll = function () {
+      logo_resize()
+    };
 
     function logo_resize() {
       // Overwriting #logo class list when scrolling.
@@ -121,4 +120,5 @@
   </script>
 
 </body>
+
 </html>

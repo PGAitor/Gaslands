@@ -1,14 +1,36 @@
 /* Colors and aesthetics*/
 /* Variables, mainly for color patterns */
+:root {
+  /* Main colour pallete */
+  --one-blue: #0597F2;
+  --one-red: #F20505;
+  --one-yellow: #EAF205;
+  --one-green: #05F240;
+  --one-orange: #F27507;
+
+  /* Asphalt extra colours */
+  --gray-light: #BFBFBF;
+  --gray-medium: #8C8C8C;
+  --gray-dark: #595856;
+
+  /* Off road extra colours */
+  --ocre-light: #F2A74B;
+  --ocre-medium: #D97941;
+  --ocre-dark: #D97941;
+
+  /* Player colours */
+  --player-red: #C40900;
+  --player-green: #0ECC1E;
+  --player-purple: #B000E0;
+}
 
 /* General basic rules ********************************************************/
-
-body{
+body {
   background-color: black;
 }
 
 /* header rules ***************************************************************/
-#logo{
+#logo {
   /*aesthetics*/
   background-color: #01ff47;
   border-radius: 50%;
@@ -16,10 +38,10 @@ body{
 }
 
 #banner{
-    /*aesthetics*/
+  /*aesthetics*/
   /*background-image:linear-gradient(to top, #018afd , black 40%);*/
   font-family: 'Creepster', cursive;
-  color:yellow;
+  color: yellow;
   text-align: center;
   line-height: 150px;
   font-size: 7vw;
@@ -28,18 +50,18 @@ body{
 
 /* nav rules ******************************************************************/
 
-nav{
+nav {
   /*aesthetics*/
   overflow: hidden;
   background-color: #018afd;
   text-align: center;
 }
 
-nav ul{
+nav ul {
   list-style: none;
 }
 
-nav li a{
+nav li a {
   text-decoration: none;
   display: block;
   padding: 15px;
@@ -50,3 +72,4 @@ nav li a{
 }
 
 /* main rules *****************************************************************/
+
