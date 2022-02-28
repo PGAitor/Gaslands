@@ -69,7 +69,7 @@ nav li{
 
 #talkbubble {
   width: 120px;
-  height: 80px;
+  height: 500px;
   background: red;
   position: relative;
   left:100px;
@@ -81,7 +81,7 @@ nav li{
   content: "";
   position: absolute;
   right: 100%;
-  top: 26px;
+  bottom: 40px;
   width: 0;
   height: 0;
   border-top: 13px solid transparent;
