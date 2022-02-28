@@ -64,13 +64,19 @@ nav li{
 
 /* main rules *****************************************************************/
 
-
+.parrilla{
+  display: grid;
+  grid-template-areas:
+    'izda centro dcha';
+  grid-template-columns: 200px, 1fr, 200px;
+}
 
 
 #talkbubble {
   width: 120px;
   height: 500px;
   background: red;
+  grid-area: centro;
   position: relative;
   left:100px;
   -moz-border-radius: 10px;
