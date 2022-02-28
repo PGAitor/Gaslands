@@ -19,8 +19,8 @@ article>h2 {
 
 .left-side {
   display: flex;
-  padding: 5px;
-  flex: 15%;
+  padding-right: 26px;
+  flex-basis: 10%;
   justify-content: flex-end;
   align-items: flex-end;
 }
@@ -31,8 +31,8 @@ article>h2 {
 
 .right-side {
   display: flex;
-  padding: 5px;
-  flex: 15%;
+  padding-left: 26px;
+  flex-basis: 10%;
   justify-content: left;
   align-items: flex-end;
 }
@@ -47,29 +47,36 @@ article>h2 {
   flex: 70%;
   text-align: center;
   border: 2px solid;
+  border-radius: 1em;
+  position: relative;
+
 
   /* Style */
   background-color: #0597F2;
 }
 
-.left-comment {
-  border-radius: 1em 1em 1em 0;
-}
-
 .left-comment::before {
   content: "";
   position: absolute;
-  right: 650px;
-  top: 26px;
+  right: 100%;
+  bottom: 26px;
   width: 0;
   height: 0;
   border-top: 13px solid transparent;
-  border-right: 26px solid blue;
-  border-bottom: 13px solid transparents;
+  border-right: 26px solid black;
+  border-bottom: 13px solid transparent;
 }
 
-.right-comment {
-  border-radius: 1em 1em 0 1em;
+.right-comment::before {
+  content: "";
+  position: absolute;
+  left: 100%;
+  bottom: 26px;
+  width: 0;
+  height: 0;
+  border-top: 13px solid transparent;
+  border-left: 26px solid black;
+  border-bottom: 13px solid transparent;
 }
 
 /* Responsive layout - makes a one column-layout instead of a two-column layout */
