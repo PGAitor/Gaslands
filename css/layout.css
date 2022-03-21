@@ -16,8 +16,8 @@
 
   /*position*/
   position: fixed;
-  top:10px;
-  left:30px;
+  top:0px;
+  left:15px;
   z-index: 2;
   display: flex;
   justify-content: center;
@@ -27,10 +27,10 @@
 
 .bigLogo{
   /*Diemnsions*/
-  width: 10vw;
+  width: 16rem;
   min-width: 5em;
-  height: 10vw;
-  min-height: 5em;
+  height: 16rem;
+  min-height: 5rem;
 }
 
 .littleLogo{

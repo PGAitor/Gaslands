@@ -26,13 +26,12 @@
 
 /* General basic rules ********************************************************/
 body {
-  background-color: black;
+  background-color: var(--gray-dark);
 }
 
 /* header rules ***************************************************************/
 #logo {
   /*aesthetics*/
-  background-color: #01ff47;
   border-radius: 50%;
   transition: all .5s ease;
 }
@@ -40,7 +39,7 @@ body {
 #banner{
   /*aesthetics*/
   /*background-image:linear-gradient(to top, #018afd , black 40%);*/
-  font-family: 'Creepster', cursive;
+  font-family: 'Black Ops One', cursive;
   color: yellow;
   text-align: center;
   line-height: 150px;
