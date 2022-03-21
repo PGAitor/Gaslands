@@ -26,10 +26,14 @@
 
 /* General basic rules ********************************************************/
 body {
-  background-color: var(--gray-dark);
+  background-color: black;
 }
 
 /* header rules ***************************************************************/
+header{
+  background-image: linear-gradient(var(--one-green),var(--one-blue));
+}
+
 #logo {
   /*aesthetics*/
   border-radius: 50%;
@@ -40,7 +44,7 @@ body {
   /*aesthetics*/
   /*background-image:linear-gradient(to top, #018afd , black 40%);*/
   font-family: 'Black Ops One', cursive;
-  color: yellow;
+  color: var(--one-yellow);
   text-align: center;
   line-height: 150px;
   font-size: 7vw;
@@ -52,8 +56,9 @@ body {
 nav {
   /*aesthetics*/
   overflow: hidden;
-  background-color: #018afd;
+  background-color:var(--one-blue);
   text-align: center;
+  
 }
 
 nav ul {
@@ -64,8 +69,8 @@ nav li a {
   text-decoration: none;
   display: block;
   padding: 15px;
-  color: yellow;
-  font-family: 'Rubik', sans-serif;
+  color: var(--one-yellow);
+  font-family: 'Black Ops One', cursive;
   font-size: 24px;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
